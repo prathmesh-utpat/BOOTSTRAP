@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Grid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-3">
+
+  <div class="container">
+    
+    <!-- 🔹 Equal columns -->
+    <div class="row">
+      <div class="col bg-primary text-white p-2">Col 1</div>
+      <div class="col bg-secondary text-white p-2">Col 2</div>
+    </div>
+
+    <br>
+
+    <!-- 🔹 Fixed width columns -->
+    <div class="row">
+      <div class="col-4 bg-success text-white p-2">4/12</div>
+      <div class="col-8 bg-warning text-dark p-2">8/12</div>
+    </div>
+
+    <br>
+
+    <!-- 🔹 Responsive columns (mobile to desktop) -->
+    <div class="row">
+      <div class="col-sm-6 col-md-4 bg-danger text-white p-2">Responsive Col</div>
+      <div class="col-sm-6 col-md-8 bg-info text-dark p-2">Responsive Col</div>
+    </div>
+
+    <br>
+
+    <!-- 🔹 Nested grid -->
+    <div class="row">
+      <div class="col-6 bg-dark text-white p-2">
+        Parent Col
+        <div class="row">
+          <div class="col bg-light text-dark p-1">Nested Col 1</div>
+          <div class="col bg-light text-dark p-1">Nested Col 2</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
